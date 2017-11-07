@@ -24,24 +24,17 @@ public class PasswordGenerator
         month = BirthMonth;
         day = BirthDay;
         website = CurrentWebsite;    
+    } 
+    
+    public String getFirstOption()
+    {
+        String option1 = color.substring(0, 3).toLowerCase() + animal.substring(0, 3).toLowerCase() + website.substring(0, 3).toUpperCase() + month + day;
+        return option1;
     }
     
-    //gets the first three letters of the string animal.
-    public String getFirstAnimal()
+    public String getSecondOption()
     {
-        String first3Animal = animal.substring(0, 3);
-        return (first3Animal);
-    }
-    
-    public String getFirstColor()
-    {
-        String first3Color = color.substring(0, 3);
-        return (first3Color);
-    }
-    
-    public String getFirstWebsite()
-    {
-        String first3Website = website.substring(0, 3);
-        return (first3Website.toUpperCase());
+        String option2 = website.substring(0, 3).toUpperCase() + month + day + color.substring(0, 3).toLowerCase() + animal.substring(0, 3).toLowerCase();
+        return option2;
     }
 }
