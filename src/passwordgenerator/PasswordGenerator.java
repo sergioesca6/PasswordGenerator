@@ -37,4 +37,10 @@ public class PasswordGenerator
         String option2 = website.substring(0, 3).toUpperCase() + month + day + color.substring(0, 3).toLowerCase() + animal.substring(0, 3).toLowerCase();
         return option2;
     }
+     
+    public String getThirdOption()
+    {
+        String option3 = month + day + color.substring(0, 3).toLowerCase() + animal.substring(0, 3).toLowerCase() + website.substring(0, 3).toUpperCase();
+        return option3;
+    }
 }
